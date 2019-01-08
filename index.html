@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <section id="hw-cont" class="section">
+      <div class="container">
+        <h1 class="title">Hello World!</h1>
+        <h2 class="subtitle">
+          A simple of how to use our api
+        </h2>
+        
+        <p>1. Account Name And Account State</p>
+
+        <a class="button" href="javascript:void(null);" onClick="getAccountName()" title="Get Account Name">Get Account Name</a>
+        
+        <a class="button" href="javascript:void(null);" onClick="getAccountState()" title="Get Account State">Get Account State</a>
+
+      </div>
+      
+      <hr class="app-divider">
+      
+      <div class="container" id="transfer-wrapper">
+        
+        
+        <p>2. Account to Account transfer</p>
+        
+        <form>
+          
+          <div class="field">
+            <label class="label">Token</label>
+            <div class="select">
+              <select id="currency-selector">
+              </select>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Send to Account Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="youreosaccou">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Amount</label>
+            <div class="control">
+              <input class="input" type="number" min="0.0000" max="10000.0000" step="0.0001" placeholder="0.0001">
+            </div>
+          </div>  
+          
+          <div class="field">
+            <label class="label">Memo</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Hello World">
+            </div>
+          </div>
+          
+          <a class="button is-info" id="send-transfer" href="javascript:void(null);" title="Send">Send</a>
+        
+        </form>
+        
+      </div>
+    </section>
+    
+  </body>
+</html>
